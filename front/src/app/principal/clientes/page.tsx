@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useState } from "react"
-import Link from 'next/link'
 import ItemCliente from "@/components/itemCliente"
 import { ClienteItf } from "@/utils/types/ClienteItf"
 

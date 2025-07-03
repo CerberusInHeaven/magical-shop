@@ -31,7 +31,7 @@ function ItemCarro({ carro, carros, setCarros }: listaCarroProps) {
       const decoded = jwtDecode<AdminPayload>(token);
       setAdmin(decoded);
       console.log("Usuário logado:", decoded);
-    } catch (error) {
+    } catch  {
       alert("Token inválido");
     }
   }, []);
