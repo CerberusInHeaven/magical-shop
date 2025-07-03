@@ -29,4 +29,4 @@ app.get('/', (req, res) => {
   res.send('WORLD OF ARTIFACTS OF POWER')
 })
 
-app.listen(process.env.PORT || 10000);
+app.listen(process.env.PORT || 8080);
