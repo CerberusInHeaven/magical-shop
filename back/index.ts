@@ -10,7 +10,7 @@ import routeAdmin from'./routes/admins'
 import routeAdminLogin from'./routes/adminLogin'
 import routeDashboard from'./routes/dashboard'
 const app = express()
-const port = 3001
+const port = process.env.PORT || 3001
 
 app.use(express.json())
 app.use(cors())
