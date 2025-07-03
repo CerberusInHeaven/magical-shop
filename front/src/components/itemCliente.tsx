@@ -1,7 +1,7 @@
 'use client'
 import { ClienteItf } from "@/utils/types/ClienteItf"
 import { Dispatch, SetStateAction } from "react"
-import { Trash2, Pencil } from "lucide-react"
+import { Trash2 } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { toast } from "sonner"
 
