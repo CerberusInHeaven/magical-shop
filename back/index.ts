@@ -29,6 +29,4 @@ app.get('/', (req, res) => {
   res.send('WORLD OF ARTIFACTS OF POWER')
 })
 
-app.listen(port, () => {
-  console.log(`Servidor rodando na porta: ${port}`)
-})
+app.listen(process.env.PORT || 3000);
