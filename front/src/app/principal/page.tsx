@@ -88,7 +88,7 @@ export default function Principal() {
             data={listaCarrosMarca}
             innerRadius={50}
             labelRadius={80}
-            theme={VictoryTheme.clean}
+            theme={VictoryTheme.grayscale}
             style={{
               labels: {
                 fontSize: 10,
@@ -120,7 +120,7 @@ export default function Principal() {
             data={listaClientesCidade}
             innerRadius={50}
             labelRadius={80}
-            theme={VictoryTheme.clean}
+            theme={VictoryTheme.grayscale}
             style={{
               labels: {
                 fontSize: 10,
