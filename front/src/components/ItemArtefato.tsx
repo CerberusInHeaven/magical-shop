@@ -90,7 +90,7 @@ function ItemCarro({ carro, carros, setCarros }: listaCarroProps) {
   return (
     <tr key={carro.id} className="odd:bg-white odd:dark:bg-[#2b2b2b] even:bg-gray-50 even:dark:bg-[#470e24] border-b dark:border-gray-700">
       <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-        <img src={carro.foto} alt="Capa do Carro"
+        <img src={carro.foto} alt="awooogaaa"
           style={{ width: 200 }} />
       </th>
       <td className={`px-6 py-4 ${carro.destaque ? "font-extrabold" : ""}`}>
