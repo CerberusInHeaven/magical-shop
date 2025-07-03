@@ -10,7 +10,7 @@ import routeAdmin from'./routes/admins'
 import routeAdminLogin from'./routes/adminLogin'
 import routeDashboard from'./routes/dashboard'
 const app = express()
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 10000
 
 app.use(express.json())
 app.use(cors())
@@ -29,4 +29,4 @@ app.get('/', (req, res) => {
   res.send('WORLD OF ARTIFACTS OF POWER')
 })
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 10000);
