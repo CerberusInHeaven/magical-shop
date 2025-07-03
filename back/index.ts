@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import routesCarros from './routes/artefatos.ts'
+import routesCarros from './routes/artefatos'
 import routesFotos from './routes/fotos'
 import routesClientes from './routes/clientes'
 import routesLogin from './routes/login'
