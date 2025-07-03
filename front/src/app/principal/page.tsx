@@ -79,71 +79,80 @@ export default function Principal() {
         </div>
       </div>
 
-      <div className="div-graficos">
-        <svg viewBox="30 55 400 400">
-          <VictoryPie
-            standalone={false}
-            width={400}
-            height={400}
-            data={listaCarrosMarca}
-            innerRadius={50}
-            labelRadius={80}
-            theme={VictoryTheme.grayscale}
-            style={{
-              labels: {
-                fontSize: 10,
-                fill: "#fff",
-                fontFamily: "Arial",
-                fontWeight: "bold"
-              }
-            }}
-          />
-          <VictoryLabel
-            textAnchor="middle"
-            style={{
-              fontSize: 12,
-              fill: "#ffffff",
-              fontFamily: "Arial",
-              fontWeight: "bold"
-            }}
-            x={200}
-            y={200}
-            text={["Artefatos", "por Tipo"]}
-          />
-        </svg>
-
-        <svg viewBox="30 55 400 400">
-          <VictoryPie
-            standalone={false}
-            width={400}
-            height={400}
-            data={listaClientesCidade}
-            innerRadius={50}
-            labelRadius={80}
-            theme={VictoryTheme.grayscale}
-            style={{
-              labels: {
-                fontSize: 10,
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="bg-gray-800 rounded-lg shadow-lg p-4"
+          style={{
+            backgroundImage: 'url(/foguinho.gif)'
+          }}>
+          <svg viewBox="30 55 400 400" className="mx-auto">
+            <VictoryPie
+              standalone={false}
+              width={400}
+              height={400}
+              data={listaCarrosMarca}
+              innerRadius={50}
+              labelRadius={80}
+              theme={VictoryTheme.grayscale}
+              style={{
+                labels: {
+                  fontSize: 10,
+                  fill: "#fff",
+                  fontFamily: "Arial",
+                  fontWeight: "bold"
+                }
+              }}
+            />
+            <VictoryLabel
+              textAnchor="middle"
+              style={{
+                fontSize: 14,
                 fill: "#ffffff",
                 fontFamily: "Arial",
                 fontWeight: "bold"
-              }
-            }}
-          />
-          <VictoryLabel
-            textAnchor="middle"
-            style={{
-              fontSize: 12,
-              fill: "#ffffff",
-              fontFamily: "Arial",
-              fontWeight: "bold"
-            }}
-            x={200}
-            y={200}
-            text={["Barganhadores", "por Cidade"]}
-          />
-        </svg>
+              }}
+              x={200}
+              y={200}
+              text={["Artefatos", "por Tipo"]}
+            />
+          </svg>
+        </div>
 
+        <div className="bg-gray-800 rounded-lg shadow-lg p-4"
+          style={{
+            backgroundImage: 'url(/foguinho.gif)'
+          }}>
+          <svg viewBox="30 55 400 400" className="mx-auto">
+            <VictoryPie
+              standalone={false}
+              width={400}
+              height={400}
+              data={listaClientesCidade}
+              innerRadius={50}
+              labelRadius={80}
+              theme={VictoryTheme.grayscale}
+              style={{
+                labels: {
+                  fontSize: 10,
+                  fill: "#fff",
+                  fontFamily: "Arial",
+                  fontWeight: "bold"
+                }
+              }}
+            />
+            <VictoryLabel
+              textAnchor="middle"
+              style={{
+                fontSize: 14,
+                fill: "#ffffff",
+                fontFamily: "Arial",
+                fontWeight: "bold"
+              }}
+              x={200}
+              y={200}
+              text={["Barganhadores", "por Cidade"]}
+            />
+          </svg>
+        </div>
       </div>
     </div>
   )
