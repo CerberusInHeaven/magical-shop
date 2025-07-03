@@ -1,14 +1,14 @@
 import express from 'express'
 import cors from 'cors'
-import routesCarros from './routes/artefatos'
-import routesFotos from './routes/fotos'
-import routesClientes from './routes/clientes'
-import routesLogin from './routes/login'
-import routesPropostas from './routes/propostas'
-import routeTipo from'./routes/tipos'
-import routeAdmin from'./routes/admins'
-import routeAdminLogin from'./routes/adminLogin'
-import routeDashboard from'./routes/dashboard'
+import routesCarros from './routes/artefatos.ts'
+import routesFotos from './routes/fotos.ts'
+import routesClientes from './routes/clientes.ts'
+import routesLogin from './routes/login.ts'
+import routesPropostas from './routes/propostas.ts'
+import routeTipo from'./routes/tipos.ts'
+import routeAdmin from'./routes/admins.ts'
+import routeAdminLogin from'./routes/adminLogin.ts'
+import routeDashboard from'./routes/dashboard.ts'
 const app = express()
 const port = process.env.PORT || 3001
 
