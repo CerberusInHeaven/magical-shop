@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import routesCarros from './routes/artefatos'
+import routesCarros from './routes/artefatos.ts'
 import routesFotos from './routes/fotos'
 import routesClientes from './routes/clientes'
 import routesLogin from './routes/login'
@@ -10,7 +10,7 @@ import routeAdmin from'./routes/admins'
 import routeAdminLogin from'./routes/adminLogin'
 import routeDashboard from'./routes/dashboard'
 const app = express()
-const port = process.env.PORT || 10000
+const port = process.env.PORT || 8080
 
 app.use(express.json())
 app.use(cors())
