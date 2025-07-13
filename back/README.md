@@ -9,3 +9,11 @@ npx prisma migrate dev --name "nome aqui sem aspas"  (Executa os commandos do pr
 npm run dev (Executa o back-end e por fim reflete no seu .env.local para renderizar os dados no front-end :) )
 
 ```
+
+#E SE LEMBRE DE CRIAR UM ARQUIVO .ENV COM O DATABASE_URL e UM JWT_KEY 
+
+```
+Algo parecido com isto 
+DATABASE_URL="SEUDB(MYSQL\POSTGRESS... ETC):LocalDoSeuDatabase"
+JWT_KEY="SENHAAQUI"
+```
